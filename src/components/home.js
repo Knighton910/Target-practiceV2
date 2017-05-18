@@ -3,7 +3,7 @@ import React from 'react'
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap/dist/css/bootstrap-theme.css'
 // import SimpleSlider from './carousel'
-// import MapView from './leaflet'
+import MapView from './leaflet'
 
 const Home = React.createClass({
   render: function() {
@@ -37,8 +37,11 @@ const Home = React.createClass({
             <a href="#">Gallery</a>
           </div>
 
-        </div>
+          <div classID="mapme">
+            <MapView/>
+          </div>
 
+        </div>
       </div>
     )
   }
